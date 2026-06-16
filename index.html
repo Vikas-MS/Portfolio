@@ -1,121 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vikas M.S</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas M S — Software Developer & AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Vikas M S — Final-year Engineering Student passionate about Software Development, AI, and building modern web & mobile applications." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
-<nav class="navbar">
-    <h2>Dev<span>Portfolio</span></h2>
-
-    <ul>
-        <li><a href="#home">Home</a></li>
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">VM<span class="dot">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="resume.pdf" download class="nav-resume">&#8595; Resume</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<section id="home" class="hero">
-
-    <div class="hero-text">
-        <h3>Hello, I'm</h3>
-        <h1>Alex Carter</h1>
-        <h2>Frontend Developer</h2>
-
-        <p>
-            Creating modern websites and user experiences with clean code and creativity.
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Open to Opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="line-reveal">Vikas</span>
+          <span class="line-reveal delay-1">M S<span class="accent-dot">.</span></span>
+        </h1>
+        <p class="hero-role line-reveal delay-2">
+          <span class="role-tag">Software Developer</span>
+          <span class="role-sep">&times;</span>
+          <span class="role-tag">AI Enthusiast</span>
         </p>
-
-        <div class="buttons">
-            <a href="#projects" class="btn">View Work</a>
-            <a href="#contact" class="btn-outline">Hire Me</a>
+        <p class="hero-tagline line-reveal delay-3">
+          Final-year Engineering Student passionate about<br>
+          building modern applications & AI-powered solutions.
+        </p>
+        <div class="hero-actions line-reveal delay-4">
+          <a href="#projects" class="btn-primary">View Projects <span class="btn-arrow">&rarr;</span></a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
+      </div>
+      <div class="hero-avatar">
+        <div class="about-img-placeholder">
+          <img class="about-avatar" src="profile.jpg" alt="Vikas M S" loading="lazy" />
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring ring-2"></div>
+        </div>
+      </div>
     </div>
-
-    <div class="hero-image">
-        <img src="https://via.placeholder.com/300" alt="profile">
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
     </div>
+  </section>
 
-</section>
-
-<section id="about" class="section">
-    <h2 class="title">About Me</h2>
-
-    <p class="about-text">
-        I am a passionate developer with experience in creating responsive
-        websites and web applications. I enjoy solving problems and building
-        digital experiences using modern technologies.
-    </p>
-</section>
-
-<section id="skills" class="section">
-    <h2 class="title">Skills</h2>
-
-    <div class="skills-grid">
-        <div class="card">HTML5</div>
-        <div class="card">CSS3</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Bootstrap</div>
-        <div class="card">React</div>
-        <div class="card">Git</div>
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid fade-up">
+        <div class="about-left">
+          <div class="section-label">// about me</div>
+          <h2 class="section-title">Who<br><em>Am I?</em></h2>
+          <div class="about-image-frame">
+            <div class="about-img-placeholder">
+              <div class="avatar-initials">VM</div>
+              <div class="avatar-ring"></div>
+              <div class="avatar-ring ring-2"></div>
+            </div>
+            <div class="img-decoration"></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-intro">
+            I am a passionate engineering student with strong problem-solving skills and a keen interest in modern
+            software development. I enjoy building web applications, AI-powered solutions, and learning new technologies.
+          </p>
+          <p class="about-body">
+            My work spans <mark>mobile app development</mark>, <mark>web technologies</mark>, and
+            <mark>machine learning</mark>. I architect solutions using Android/Kotlin, Python-based ML pipelines,
+            and full-stack web frameworks &mdash; building tools that solve real-world problems.
+          </p>
+          <p class="about-body">
+            <strong>Career Objective:</strong> Seeking opportunities where I can apply my technical knowledge,
+            collaborate with talented teams, and contribute to innovative projects that create real-world impact.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Android Development</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Full Stack Web</span>
+            <span class="tag">Python & AI</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">RESTful APIs</span>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="projects" class="section">
-    <h2 class="title">Projects</h2>
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">// skills & tools</div>
+        <h2 class="section-title">Technical <em>Arsenal</em></h2>
+      </div>
+      <div class="skills-grid">
 
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Responsive personal website with modern design.</p>
-            <button>Live Demo</button>
+        <div class="skill-card fade-up">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.5" />
+              <line x1="12" y1="18" x2="12" y2="18.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Mobile Development</h3>
+          <p class="skill-desc">Native Android apps with Kotlin & Java, cross-platform with Flutter Framework.</p>
+          <div class="skill-tags">
+            <span>Kotlin</span><span>Java</span><span>Flutter</span><span>Android Studio</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:90%"></div>
+          </div>
         </div>
 
-        <div class="project-card">
-            <h3>Business Landing Page</h3>
-            <p>Clean landing page for startup branding.</p>
-            <button>Live Demo</button>
+        <div class="skill-card fade-up">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polyline points="16,18 22,12 16,6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="8,6 2,12 8,18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="14" y1="4" x2="10" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Programming Languages</h3>
+          <p class="skill-desc">Strong foundations in core programming with Python, Java, C, Kotlin, PHP & JavaScript.</p>
+          <div class="skill-tags">
+            <span>Python</span><span>Java</span><span>C</span><span>Kotlin</span><span>JavaScript</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:88%"></div>
+          </div>
         </div>
 
-        <div class="project-card">
-            <h3>Dashboard UI</h3>
-            <p>Simple admin dashboard with charts and cards.</p>
-            <button>Live Demo</button>
+        <div class="skill-card fade-up">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Web & Backend</h3>
+          <p class="skill-desc">Full-stack web development with HTML5, CSS3, Flask, and RESTful API design.</p>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>Flask</span><span>REST APIs</span><span>PHP</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:85%"></div>
+          </div>
         </div>
 
+        <div class="skill-card fade-up">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" />
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="skill-name">Data & Machine Learning</h3>
+          <p class="skill-desc">Database design with MySQL & SQLite, ML fundamentals with SVM & Scikit-Learn.</p>
+          <div class="skill-tags">
+            <span>MySQL</span><span>SQLite</span><span>Scikit-Learn</span><span>SVM</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:78%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="18" cy="18" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="6" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M13 6h3a2 2 0 0 1 2 2v7M11 18H8a2 2 0 0 1-2-2V9" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Developer Tools</h3>
+          <p class="skill-desc">Version control with Git & GitHub, Android NDK, Gradle build system fundamentals.</p>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Gradle</span><span>Android NDK</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w:82%"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact" class="section">
-    <h2 class="title">Contact Me</h2>
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">// selected work</div>
+        <h2 class="section-title">Featured <em>Projects</em></h2>
+      </div>
+      <div class="projects-grid">
 
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+        <div class="project-card fade-up">
+          <div class="project-header">
+            <span class="project-label">ML Classification</span>
+            <span class="project-year">2021–2023</span>
+          </div>
+          <h3 class="project-title">PCOS / PCOD Detection System</h3>
+          <p class="project-desc">Achieved ~82% prediction accuracy using feature selection and ML classification on
+            questionnaire-based health data for early PCOS/PCOD detection.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Scikit-Learn</span><span>SVM</span><span>ML</span>
+          </div>
+          <div class="project-metric">
+            <span class="metric-value">~82%</span>
+            <span class="metric-label">Accuracy</span>
+          </div>
+        </div>
 
-<footer>
-    <div class="socials">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Instagram</a>
+        <div class="project-card featured fade-up">
+          <div class="project-header">
+            <span class="project-label">Azure Hackathon 2022</span>
+            <span class="project-badge">🏆 Top 5 / 100+ Teams</span>
+          </div>
+          <h3 class="project-title">Plant Disease Detection</h3>
+          <p class="project-desc">Built a CNN with ~87% accuracy on 1,000+ labeled leaf images; reduced
+            misclassification by ~20% through model tuning. Microsoft Azure Hackathon entry.</p>
+          <div class="project-tags">
+            <span>CNN</span><span>Azure</span><span>Deep Learning</span><span>Computer Vision</span>
+          </div>
+          <div class="project-metric">
+            <span class="metric-value">~87%</span>
+            <span class="metric-label">Accuracy</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-header">
+            <span class="project-label">Android Application</span>
+            <span class="project-year">Academic Project</span>
+          </div>
+          <h3 class="project-title">Khata Book Application</h3>
+          <p class="project-desc">Native Android accounting utility to digitally manage, track, and secure complex
+            ledger histories. Features localized caching with persistent SQLite database.</p>
+          <div class="project-tags">
+            <span>Kotlin</span><span>Android Studio</span><span>SQLite</span><span>Material Design</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-header">
+            <span class="project-label">Full Stack Web App</span>
+            <span class="project-year">Academic Project</span>
+          </div>
+          <h3 class="project-title">COVID Bed Slot Booking Portal</h3>
+          <p class="project-desc">Centralized web portal for clinical resource booking and real-time bed inventory
+            tracking. Structured relational tables with atomic reservation queries.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>Flask</span><span>MySQL</span>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <p>© 2026 Alex Carter | All Rights Reserved</p>
-</footer>
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner fade-up">
+        <div class="section-label">// get in touch</div>
+        <h2 class="section-title">Let's Build<br><em>Something Great</em></h2>
+        <p class="contact-desc">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:vikasms.work@gmail.com" class="contact-card" id="contact-email">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">vikasms.work@gmail.com</span>
+            </div>
+            <span class="contact-arrow">&rarr;</span>
+          </a>
+          <a href="https://www.linkedin.com/in/vikas-ms-5797a9235/" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 11v5M8 8v.01M12 16v-5c0-1 1-2 2-2s2 1 2 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">vikas-ms</span>
+            </div>
+            <span class="contact-arrow">&rarr;</span>
+          </a>
+          <a href="https://github.com/Vikas-MS" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.115 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.16.59.67.5A10.003 10.003 0 0022 12c0-5.523-4.477-10-10-10z" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">Vikas-MS</span>
+            </div>
+            <span class="contact-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">VM<span class="dot">.</span></a>
+        <p class="footer-text">&copy; 2026 Vikas M S &mdash; All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="https://github.com/Vikas-MS" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/vikas-ms-5797a9235/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:vikasms.work@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
